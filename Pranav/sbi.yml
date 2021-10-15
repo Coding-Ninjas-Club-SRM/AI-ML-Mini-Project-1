@@ -1,0 +1,80 @@
+table:
+    css: table.table.table-hover
+    xpath: null
+    type: Text
+    children:
+        Date:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(1)'
+            xpath: null
+            multiple: true
+            type: Text
+        CG_Scheme:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(2)'
+            xpath: null
+            multiple: true
+            type: Text
+        SG_Scheme:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(3)'
+            xpath: null
+            multiple: true
+            type: Text
+        E_Tier1:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(4)'
+            xpath: null
+            multiple: true
+            type: Text
+        C_Tier1:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(5)'
+            xpath: null
+            multiple: true
+            type: Text
+        G_Tier1:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(6)'
+            xpath: null
+            multiple: true
+            type: Text
+        E_Tier2:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(7)'
+            xpath: null
+            multiple: true
+            type: Text
+        C_Tier2:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(8)'
+            xpath: null
+            multiple: true
+            type: Text
+        G_Tier2:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(9)'
+            xpath: null
+            multiple: true
+            type: Text
+        NPS_Lite:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(10)'
+            xpath: null
+            multiple: true
+            type: Text
+        Corporate_CG:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(11)'
+            xpath: null
+            multiple: true
+            type: Text
+        APY:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(12)'
+            xpath: null
+            multiple: true
+            type: Text
+        A_Tier1:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(13)'
+            xpath: null
+            multiple: true
+            type: Text
+        A_Tier2:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(14)'
+            xpath: null
+            multiple: true
+            type: Text
+        NPS_TTS2:
+            css: 'tr:nth-of-type(n+2) td:nth-of-type(15)'
+            xpath: null
+            multiple: true
+            type: Text
