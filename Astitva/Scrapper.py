@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 import csv
-driver = webdriver.Chrome('Astitva\chromedriver_win32\chromedriver.exe')
+driver = webdriver.Chrome('https://github.com/Coding-Ninjas-Club-SRM/AI-ML-Mini-Project-1-/edit/main/Astitva/chromedriver.exe')
 driver.get("https://www.sbipensionfunds.com/historical-nav/")
 datefield1=driver.find_element_by_id('f_date_p1')
 datefield2=driver.find_element_by_id('f_date_p2')
