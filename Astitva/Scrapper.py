@@ -28,7 +28,7 @@ for tr in soup.find_all('tr')[1:]:
     if(data):
         print("Inserting Table data: {}".format(','.join(data)))
         csv_writer.writerow(data)
-        
+driver.quit()    
 
 
 
