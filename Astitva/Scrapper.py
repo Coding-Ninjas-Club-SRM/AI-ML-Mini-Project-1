@@ -1,13 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
+from datetime import date
 import csv
-driver = webdriver.Chrome('Astitva/chromedriver.exe')
+driver = webdriver.Chrome("D:\CN\WebScrapper\chromedriver_win32\chromedriver.exe")
 driver.get("https://www.sbipensionfunds.com/historical-nav/")
 datefield1=driver.find_element_by_id('f_date_p1')
 datefield2=driver.find_element_by_id('f_date_p2')
 ActionChains(driver).move_to_element(datefield1).click().send_keys('15-05-2009').perform()
-ActionChains(driver).move_to_element(datefield2).click().send_keys('17-10-2021').perform()
+ActionChains(driver).move_to_element(datefield2).click().send_keys(date.today().strftime("%d-%m-%Y")).perform()
 search_btn = driver.find_element_by_name('mysubmit')
 ActionChains(driver).move_to_element(search_btn).click().click().perform()
 
