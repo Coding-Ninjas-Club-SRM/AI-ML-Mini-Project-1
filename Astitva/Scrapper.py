@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import date
 import csv
 def Scrapper():
-    driver = webdriver.Chrome("D:\CN\WebScrapper\chromedriver_win32\chromedriver.exe")
+    driver = webdriver.Chrome('D:\GIT\CN\AI-ML-Mini-Project-1-\Astitva\chromedriver.exe')
     driver.get("https://www.sbipensionfunds.com/historical-nav/")
     datefield1=driver.find_element_by_id('f_date_p1')
     datefield2=driver.find_element_by_id('f_date_p2')
@@ -29,10 +29,5 @@ def Scrapper():
         if(data):
             print("Inserting Table data: {}".format(','.join(data)))
             csv_writer.writerow(data)
-
+    driver.quit
 Scrapper()
-driver.quit
-
-
-
-
